@@ -1,0 +1,457 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Top Bar */
+.top-bar {
+  background: #f8f8f8;
+  font-size: 14px;
+  color: #333;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+.top-bar .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.top-bar i {
+  color: #0073e6;
+  margin-right: 5px;
+}
+.divider {
+  margin: 0 8px;
+  color: #aaa;
+}
+
+/* Navbar */
+.navbar {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.navbar .container {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.logo img {
+  height: 50px;
+}
+.logo h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.logo p {
+  font-size: 12px;
+  color: #555;
+  margin-top: -3px;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+.menu a:hover {
+  color: #0073e6;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  min-width: 150px;
+  list-style: none;
+  padding: 10px 0;
+  z-index: 1000;
+}
+.dropdown-menu li a {
+  display: block;
+  padding: 6px 15px;
+  color: #333;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Button */
+.btn-appointment {
+  background: #2f6aff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  display: inline-block;
+}
+.btn-appointment:hover {
+  background: #1f4fcc;
+}
+
+/* Hamburger Icon */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* First Section */
+.first {
+  background: #f8faff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  padding: 50px 0;
+  width: 100%;
+}
+.first h1 {
+  line-height: 1.3;
+  font-size: 2rem;
+}
+.doctor-img {
+  max-width: 85%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+.booking-form {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  width: 85%;
+  z-index: 2;
+}
+
+
+.input-group-text {
+  border: none;
+}
+.form-control {
+  border: none;
+  background: #f6f7fb;
+  padding: 12px;
+  font-size: 15px;
+}
+.btn-primary {
+  font-weight: 600;
+  border-radius: 0px;
+}
+.button {
+  height: 54px;
+  width: 162.86px;
+}
+
+.images {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.images img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Footer  */
+.footer {
+  background-color: #212529;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section  */
+.footer h6 {
+  position: relative;
+  display: inline-block;
+}
+
+.footer h6::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #3267FF;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* Footer menu */
+.footer-menu {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-menu li {
+  margin-bottom: 10px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: #bbb;
+  position: relative;
+}
+
+.footer-menu a:hover {
+  color: #fff;
+}
+
+.footer-menu a.active-link {
+  color: #fff;
+}
+
+/* .footer-menu a.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #3267FF;
+} */
+
+/*Sign up button */
+.footer-form .form-control {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.footer-form .btn {
+  white-space: nowrap;
+  padding: 10px 16px;
+  border-radius: 5px;
+  margin-left: 3px;
+  background-color: #3267FF;
+  border: none;
+  color: white;
+}
+
+/* Social Icons */
+.social-icons a {
+  color: #bbb;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.image-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+ 
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.input input.form-control {
+  width: 100%;
+  padding-right: 100px; 
+  height: 45px;
+  border-radius: 5px;
+  border: none;
+  padding-left: 15px;
+  font-size: 15px;
+}
+
+.input button.btn {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  height: 38px;
+  border: none;
+  padding: 0 16px;
+  background-color: #3267FF;
+  color: white;
+  font-size: 15px;
+}
+
+
+
+/* media */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+  .menu.active {
+    display: flex;
+    max-height: 500px;
+  }
+  .menu li {
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+    color: #000;
+  }
+  .navbar .container {
+    flex-direction: row;
+    width: 90%;
+  }
+  .top-bar .container {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .first {
+    text-align: center;
+    padding: 40px 15px;
+  }
+  .doctor-img {
+    max-width: 75%;
+  }
+  .booking-form {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .images {
+    flex-direction: column;
+    top: 60px;
+    align-items: center;
+    position: relative;
+  }
+    .testimonial-section .col-lg-5{
+text-align: center;
+    }
+  .testimonial-section .col-lg-7 {
+    text-align: center;
+  }
+  .testimonial-section p {
+    max-width: 100%;
+  }
+   .footer-form .d-flex {
+    flex-direction: column;
+  }
+
+  .footer-form .form-control,
+  .footer-form .btn {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .footer-form .btn {
+    margin-left: 0 !important;
+  }
+
+  .social-icons a {
+    font-size: 18px;
+  }
+}
+
+/* 430px and below */
+@media (max-width: 430px) {
+    .navbar .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .top-bar {
+    font-size: 13px;
+    padding: 6px 0;
+  }
+  .logo h2 {
+    font-size: 18px;
+  }
+  .logo img {
+    height: 40px;
+  }
+  .btn-appointment {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+  .first h1 {
+    font-size: 1.6rem;
+  }
+  .doctor-img {
+    max-width: 70%;
+  }
+  .booking-form {
+    position: static;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .form-control {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .btn-primary {
+    font-size: 12px;       
+    padding: 6px 12px;     
+    width: auto !important; 
+    display: inline-block;  
+  }
+
+  .button {
+    width: 40px !important; 
+  }
+  .images img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .testimonial-section p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
+  .testimonial-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .testimonial-card img {
+    margin: 10px 0 0;
+    width: 60px;
+    height: 60px;
+  }
+
+
+
+}
